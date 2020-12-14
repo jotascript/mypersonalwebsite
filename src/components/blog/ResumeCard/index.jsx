@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 import ResumeCardStyles from './styles'
 
-const ResumeCard = ({ title, excerpt, date }) => (
+const ResumeCard = ({ postResume: { slug, title, excerpt, date } }) => (
   <ResumeCardStyles>
-    <Link href="#">
+    <Link href={`/blog/post/${slug}`}>
       <a><h1>{title}</h1></a>
     </Link>
     <div className="resume">
@@ -16,9 +16,12 @@ const ResumeCard = ({ title, excerpt, date }) => (
 )
 
 ResumeCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  excerpt: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired
+  postResume: PropTypes.shape({
+    slug: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    excerpt: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired
+  })
 }
 
 export default ResumeCard
