@@ -1,7 +1,8 @@
 import Header from './Header'
-import { BlogResumeCard } from './blog'
+import { BlogPost, BlogResumeCard } from './blog'
 
 export {
+  BlogPost,
   BlogResumeCard,
   Header,
 }

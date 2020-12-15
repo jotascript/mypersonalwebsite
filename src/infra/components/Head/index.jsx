@@ -3,7 +3,7 @@ import NextHead from 'next/head'
 
 const Head = ({ title }) => (
   <NextHead>
-    <title>{title}</title>
+    <title>{`${title} | ${process.env.OWNER}`}</title>
   </NextHead>
 )
 

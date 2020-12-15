@@ -1,3 +1,4 @@
+import BlogPost from './Post'
 import BlogResumeCard from './ResumeCard'
 
-export { BlogResumeCard }
+export { BlogPost, BlogResumeCard }

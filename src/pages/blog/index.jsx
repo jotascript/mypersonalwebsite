@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-import { format } from 'date-fns'
 
 import Head from '../../infra/components/Head'
 
@@ -29,19 +28,8 @@ const Blog = ({ githubInfos, postResumes }) => {
 }
 
 Blog.propTypes = {
-  githubInfos: PropTypes.shape({
-    login: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    avatar_url: PropTypes.string.isRequired,
-    bio: PropTypes.string
-  }),
-  postResumes: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string,
-      excerpt: PropTypes.string,
-      date: PropTypes.string
-    })
-  )
+  githubInfos: PropTypes.object.isRequired,
+  postResumes: PropTypes.object.isRequired
 }
 
 Blog.defaultProps = {
@@ -51,10 +39,8 @@ Blog.defaultProps = {
 export async function getStaticProps() {
   const githubInfos = await GithubService.myInfos()
 
-  const allPosts = BlogGetAllPosts(['slug', 'title', 'excerpt', 'date'])
-  const postResumes = allPosts.map(post => {
-    post.date = format(new Date(post.date), 'dd MMMM yyyy')
-    return post
+  const postResumes = BlogGetAllPosts(['slug', 'title', 'excerpt', 'date'], {
+    date: 'formatted',
   })
 
   return {

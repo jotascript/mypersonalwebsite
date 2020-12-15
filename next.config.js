@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    OWNER: 'JotaScript',
+  },
   async redirects() {
     return [
       {

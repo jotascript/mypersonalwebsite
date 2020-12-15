@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
+import { format } from 'date-fns'
 import matter from 'gray-matter'
 
 const postsDirectory = join(process.cwd(), './_posts')
@@ -8,7 +9,7 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug, fields = []) {
+export function getPostBySlug(slug, fields = [], options = {}) {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
@@ -16,8 +17,19 @@ export function getPostBySlug(slug, fields = []) {
 
   let items = {}
 
+  if (options?.date === 'formatted') {
+    let dateFormat = 'dd MMMM yyyy'
+
+    try {
+      if (options.dateFormat) dateFormat = options.dateFormat
+      data.date = format(new Date(data.date), dateFormat)
+    } catch (error) {
+      data.date = format(new Date(data.date), 'dd MMMM yyyy')
+    }
+  }
+
   // Ensure only the minimal needed data is exposed
-  if (fields.length > 0) {
+  if (fields?.length > 0) {
     fields.forEach((field) => {
       if (field === 'slug') {
         items[field] = realSlug
@@ -41,10 +53,10 @@ export function getPostBySlug(slug, fields = []) {
   return items
 }
 
-export function getAllPosts(fields = []) {
+export function getAllPosts(fields = [], options = {}) {
   const slugs = getPostSlugs()
   const posts = slugs
-    .map((slug) => getPostBySlug(slug, fields))
+    .map((slug) => getPostBySlug(slug, fields, options))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
 

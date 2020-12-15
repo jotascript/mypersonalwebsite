@@ -2,6 +2,7 @@
 title: 'My first Post'
 excerpt: 'My first blog post!'
 date: '2020-12-13T14:00:00.000Z'
+author: 'João Paulo Pontes'
 ---
 
 # My first post

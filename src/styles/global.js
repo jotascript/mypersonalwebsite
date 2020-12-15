@@ -22,11 +22,11 @@ export const lightTheme = {
     secondary: '#FF63E9',
     text: '#262626',
     textMinor: '#c2c2c2',
-    opacity05: 'rgba(255, 255, 255, 0.05)',
-    opacity10: 'rgba(255, 255, 255, 0.10)',
-    opacity15: 'rgba(255, 255, 255, 0.15)',
-    opacity20: 'rgba(255, 255, 255, 0.20)',
-    opacity25: 'rgba(255, 255, 255, 0.25)',
+    opacity05: 'rgba(0, 0, 0, 0.05)',
+    opacity10: 'rgba(0, 0, 0, 0.10)',
+    opacity15: 'rgba(0, 0, 0, 0.15)',
+    opacity20: 'rgba(0, 0, 0, 0.20)',
+    opacity25: 'rgba(0, 0, 0, 0.25)',
   },
 }
 
