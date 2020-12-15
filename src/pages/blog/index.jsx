@@ -39,7 +39,7 @@ Blog.defaultProps = {
 export async function getStaticProps() {
   const githubInfos = await GithubService.myInfos()
 
-  const postResumes = BlogGetAllPosts(['slug', 'title', 'excerpt', 'date'], {
+  const postResumes = BlogGetAllPosts(['slug', 'title', 'excerpt', 'author', 'date'], {
     date: 'formatted',
   })
 
