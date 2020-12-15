@@ -8,5 +8,6 @@ author: 'João Paulo Pontes'
 # My first post
 
 I am very excited to be able to share my experiences, studies and tests with you.
+Other intention with the blog is to get vocabulary in English, writing posts.
 
 See you soon!
