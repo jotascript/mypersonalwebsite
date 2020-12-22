@@ -21,7 +21,7 @@ export const lightTheme = {
     primary: '#3E82FC',
     secondary: '#FF63E9',
     text: '#262626',
-    textMinor: '#c2c2c2',
+    textMinor: '#949494',
     opacity05: 'rgba(0, 0, 0, 0.05)',
     opacity10: 'rgba(0, 0, 0, 0.10)',
     opacity15: 'rgba(0, 0, 0, 0.15)',

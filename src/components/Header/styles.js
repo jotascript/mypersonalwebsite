@@ -1,13 +1,18 @@
 import styled from 'styled-components'
 
-export default styled.header`
+export default styled.div`
   display: flex;
   flex-flow: row;
   align-items: center;
   padding: 16px;
+  margin: 24px 0px;
 
-  div {
+  > div {
     padding: 16px;
+  }
+
+  .flex-1 {
+    flex: 1;
   }
 
   .name {
@@ -26,7 +31,16 @@ export default styled.header`
     border: 2px solid var(--color-primary);
   }
 
-  @media (min-width: 300px) {
+  @media (max-width: 770px) {
+    margin: unset;
+    padding: 4px;
+
+    > div {
+      padding: 8px;
+    }
+  }
+
+  @media (min-width: 200px) {
     .name {
       font-size: 16px;
     }
@@ -36,23 +50,29 @@ export default styled.header`
     }
 
     .avatar {
-      width: 50px;
-      height: 50px;
+      width: 36px;
+      height: 36px;
     }
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 375px) {
     .name {
       font-size: 18px;
     }
 
     .avatar {
-      width: 65px;
-      height: 65px;
+      width: 48px;
+      height: 48px;
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
+    padding: 8px;
+
+    > div {
+      padding: 8px;
+    }
+
     .name {
       font-size: 26px;
     }
@@ -62,8 +82,8 @@ export default styled.header`
     }
 
     .avatar {
-      width: 105px;
-      height: 105px;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -77,8 +97,8 @@ export default styled.header`
     }
 
     .avatar {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
     }
   }
 `

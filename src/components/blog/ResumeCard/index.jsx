@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import Link from 'next/link'
+import { Link } from '../../../infra/components'
 
 import ResumeCardStyles from './styles'
 

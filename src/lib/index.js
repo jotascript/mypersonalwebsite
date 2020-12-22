@@ -1,3 +1,10 @@
-import { BlogGetAllPosts, BlogGetPostBySlug, markdownToHtml } from './blog'
+import markdownToHtml from './markdownToHtml'
+import { BlogGetAllPosts, BlogGetPostBySlug } from './blog'
+import { DocumentGetMarkdownDocByName } from './document'
 
-export { BlogGetAllPosts, BlogGetPostBySlug, markdownToHtml }
+export {
+  BlogGetAllPosts,
+  BlogGetPostBySlug,
+  DocumentGetMarkdownDocByName,
+  markdownToHtml,
+}

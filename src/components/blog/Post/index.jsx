@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types'
 
+import { MarkdownToHtml } from '../../../styles'
+
 import PostStyles from './styles'
 
 const Post = ({ post: { content, author, date } }) => (
   <PostStyles>
-    <div
-      className="content"
-      dangerouslySetInnerHTML={{ __html: content }}
-    ></div>
+    <MarkdownToHtml dangerouslySetInnerHTML={{ __html: content }} />
     <div className="post-info">Author: {author} | Date: { date }</div>
   </PostStyles>
 )

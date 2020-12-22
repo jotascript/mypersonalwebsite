@@ -11,7 +11,7 @@ const Header = ({ githubInfos }) => (
         alt={githubInfos.name}
       />
     </div>
-    <div>
+    <div className="flex-1">
       <div className="name">{githubInfos.name}</div>
       <span>{githubInfos.bio}</span>
     </div>
