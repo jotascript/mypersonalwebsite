@@ -1,6 +1,13 @@
 ## Education
 
-#### Curse, College, City, Province - Country
-*January 2020 - December 2020*
+#### Technologist, Unibratec, Recife, PE - Brazil
+*January 2014 - December 2016*
 
-Graduated in Artificial Intelligence.
+Graduated in Analysis and Developer of Systems.
+
+---
+
+#### Postgraduate (Incomplet), Unibratec, Recife, PE - Brazil
+*January 2018 - November 2018*
+
+Postgraduate in Artificial Intelligence & Data Science (Incomplet).

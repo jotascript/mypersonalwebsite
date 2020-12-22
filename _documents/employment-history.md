@@ -1,6 +1,31 @@
 ## Employment History
 
-#### Software Engineer, Company Name, City, Province - Country
-*January 2020 - December 2020*
+#### Software Engineer, Locus Custom Software, Recife, PE - Brazil
+*January 2019 - December 2020*
 
-I worked with web applications. I had using Javascript, HTML and CSS.
+I had the opportunity to work with agile software development(Scrum). Taking
+turns in projects leadership. I'm working as an full stack developer, with
+technologies as well as ReactJS/Native(front-end) and Django(back-end).
+
+---
+
+#### Analyst Jr. - Mobile Developer, Accenture, Recife, PE - Brazil
+*January 2018 - January 2019*
+
+I worked a lot with Ionic, developing mobile apps to Android and IOS.
+
+---
+
+#### Web Developer, Pleno Consultoria LTDA, Jaboatão dos Guararapes, PE - Brazil
+*July 2016 - January 2018*
+
+I worked developing web applications with Javascript, PHP, HTML and other
+web technologies.
+
+---
+
+#### Web Developer (Intern), Pleno Consultoria LTDA, Jaboatão dos Guararapes, PE - Brazil
+*July 2015 - July 2016*
+
+I worked as an intern, developing web applications with Javascript, PHP, HTML
+and other web technologies.
