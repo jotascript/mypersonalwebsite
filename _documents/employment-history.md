@@ -1,5 +1,12 @@
 ## Employment History
 
+#### Front-end Software Engineer, Liferay, Recife, PE - Brazil
+*February 2021 - Today*
+
+I'm working with development of ReactJS components to interface of Liferay Portal.
+
+---
+
 #### Software Engineer, Locus Custom Software, Recife, PE - Brazil
 *January 2019 - December 2020*
 
