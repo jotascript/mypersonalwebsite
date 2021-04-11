@@ -17,7 +17,7 @@ const Home = ({ githubInfos, employmentHistory, education }) => {
       <MdFlex row>
         <Skills />
         <Container responsiveMarginLeft="16">
-          <header><strong>Curriculum Vitæ</strong></header>
+          <header><strong> Resume / Curriculum Vitæ</strong></header>
           <MarkdownToHtml background dangerouslySetInnerHTML={{ __html: employmentHistory.content }} />
           <MarkdownToHtml background dangerouslySetInnerHTML={{ __html: education.content }} />
         </Container>
